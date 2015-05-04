@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Created by Leo: http://leoeditor.com/leo_toc.html -->
+<!-- Created by Leo (http://leoeditor.com/leo_toc.html) -->
 <?xml-stylesheet ekr_test ?>
-<leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" >
+<leo_file xmlns:leo="http://www.leo-editor.org/2011/leo" >
 <leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
 <globals body_outline_ratio="0.5" body_secondary_ratio="0.5">
 	<global_window_position top="50" left="50" height="500" width="700"/>
@@ -1739,16 +1739,19 @@ if (!newfile.Status) {
 @cherrypy.expose
 # index 方法為 CherryPy 各類別成員方法中的內建(default)方法, 當使用者執行時未指定方法, 系統將會優先執行 index 方法
 # 有 self 的方法為類別中的成員方法, Python 程式透過此一 self 在各成員方法間傳遞物件內容
-def index(self):
+def index2(self):
     outstring = '''
     &lt;!DOCTYPE html&gt; 
     &lt;html&gt;
     &lt;head&gt;
     &lt;meta http-equiv="content-type" content="text/html;charset=utf-8"&gt;
     &lt;/head&gt;
+齒數:&lt;input type=text name=N value='''+str(N)+'''&gt;&lt;br /&gt;
     &lt;body&gt;
     &lt;a href="spur"&gt;spur&lt;/a&gt;&lt;br /&gt;
     &lt;a href="drawspur"&gt;drawspur&lt;/a&gt;&lt;br /&gt;
+    &lt;a href="40223238"&gt;40223238&lt;/a&gt;&lt;br /&gt;
+
     &lt;/body&gt;
     &lt;/html&gt;
     '''
